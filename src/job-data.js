@@ -96,3 +96,5 @@ export const skillProficencies = {
     LEADING,
   ],
 };
+
+export const jobSkills = Object.keys(skillProficencies);

@@ -1,7 +1,9 @@
 import React from 'react';
-import { jobTitles } from './job-data';
+import { jobTitles, skillProficencies } from './job-data';
 
-const SkillRow = ({ skill, proficincies }) => {
+const SkillRow = ({ skill }) => {
+  const proficincies = skillProficencies[skill];
+
   return (
     <>
       <div className="skill">{skill}</div>
