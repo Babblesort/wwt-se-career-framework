@@ -6,6 +6,7 @@ import './app.scss';
 
 const App = () => {
   const [activeJobTitle, setActiveJobTitle] = useState(null);
+  const [activeSkill, setActiveSkill] = useState(null);
 
   return (
     <div className="se-grid">
@@ -16,7 +17,13 @@ const App = () => {
       />
 
       {jobSkills.map((skill) => (
-        <SkillRow skill={skill} activeJobTitle={activeJobTitle} key={skill} />
+        <SkillRow
+          skill={skill}
+          activeJobTitle={activeJobTitle}
+          activeSkill={activeSkill}
+          onClick={setActiveSkill}
+          key={skill}
+        />
       ))}
     </div>
   );

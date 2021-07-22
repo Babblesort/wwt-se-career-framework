@@ -32,14 +32,26 @@
 }
 
 .skill {
+  cursor: pointer;
+  border: none;
   border-radius: 2px;
   padding: 0.5rem;
   background-color: #838787;
   color: white;
   display: flex;
+  text-align: left;
   align-items: center;
   font-weight: bold;
   font-size: 0.9rem;
+
+  &.inactive {
+    background-color: #83878710;
+    color: #ffffff10;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 .proficiency {
