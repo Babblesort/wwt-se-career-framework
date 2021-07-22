@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { jobTitles, jobSkills } from './job-data';
 import JobTitlesRow from './JobTitlesRow';
 import SkillRow from './SkillRow';
-import './app.css';
+import './app.scss';
 
 const App = () => {
   const [activeJobTitle, setActiveJobTitle] = useState(null);
