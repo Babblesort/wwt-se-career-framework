@@ -1,8 +1,8 @@
 import React from 'react';
 import classNames from 'classnames';
-const JobTitlesRow = ({ titles, activeJobTitle, onClick }) => {
+const JobTitlesRow = ({ titles, activeTitle, onClick }) => {
   const handleClick = (title) => {
-    const nextActiveTitle = title === activeJobTitle ? null : title;
+    const nextActiveTitle = title === activeTitle ? null : title;
     onClick(nextActiveTitle);
   };
 
@@ -11,7 +11,7 @@ const JobTitlesRow = ({ titles, activeJobTitle, onClick }) => {
       <div />
       {titles.map((title) => {
         const titleClass = classNames('job-title', {
-          inactive: activeJobTitle != null && title !== activeJobTitle,
+          inactive: activeTitle != null && title !== activeTitle,
         });
 
         return (

@@ -55,12 +55,19 @@
 }
 
 .proficiency {
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
   border-radius: 7px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.9rem;
+
+  &:hover {
+    text-decoration: underline;
+  }
 
   &.developing {
     background-color: #d8e8f6;

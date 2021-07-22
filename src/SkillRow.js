@@ -2,12 +2,23 @@ import classNames from 'classnames';
 import React from 'react';
 import { jobTitles, skillProficencies } from './job-data';
 
-const SkillRow = ({ skill, activeJobTitle, activeSkill, onClick }) => {
+const SkillRow = ({
+  skill,
+  activeTitle,
+  activeSkill,
+  onSkillChange,
+  onTitleChange,
+}) => {
   const proficincies = skillProficencies[skill];
 
-  const handleClick = (skill) => {
+  const handleSkillClick = (skill) => {
     const nextActiveSkill = skill === activeSkill ? null : skill;
-    onClick(nextActiveSkill);
+    onSkillChange(nextActiveSkill);
+  };
+
+  const handleProficiencyClick = (skill, title) => {
+    onSkillChange(skill);
+    onTitleChange(title);
   };
 
   const skillClasses = classNames('skill', {
@@ -19,7 +30,7 @@ const SkillRow = ({ skill, activeJobTitle, activeSkill, onClick }) => {
       <button
         className={skillClasses}
         type="button"
-        onClick={() => handleClick(skill)}
+        onClick={() => handleSkillClick(skill)}
       >
         {skill}
       </button>
@@ -28,16 +39,21 @@ const SkillRow = ({ skill, activeJobTitle, activeSkill, onClick }) => {
         const proficiencyKey = `${jobTitles[i]}-${proficiency}`;
 
         const isInactiveProficiency =
-          (activeJobTitle !== null && jobTitles[i] !== activeJobTitle) ||
+          (activeTitle !== null && jobTitles[i] !== activeTitle) ||
           (activeSkill !== null && skill !== activeSkill);
 
         const classes = classNames(proficiencyClass, {
           inactive: isInactiveProficiency,
         });
         return (
-          <div className={classes} key={proficiencyKey}>
+          <button
+            type="button"
+            className={classes}
+            onClick={() => handleProficiencyClick(skill, jobTitles[i])}
+            key={proficiencyKey}
+          >
             {proficiency}
-          </div>
+          </button>
         );
       })}
     </>
