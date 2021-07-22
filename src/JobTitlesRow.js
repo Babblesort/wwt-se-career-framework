@@ -1,9 +1,9 @@
 import React from 'react';
 import classNames from 'classnames';
-const JobTitlesRow = ({ titles, activeTitle, onClick }) => {
+const JobTitlesRow = ({ titles, activeTitle, onTitleChange }) => {
   const handleClick = (title) => {
     const nextActiveTitle = title === activeTitle ? null : title;
-    onClick(nextActiveTitle);
+    onTitleChange(nextActiveTitle);
   };
 
   return (

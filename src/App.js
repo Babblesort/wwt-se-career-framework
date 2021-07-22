@@ -5,7 +5,7 @@ import SkillRow from './SkillRow';
 import './app.scss';
 
 const App = () => {
-  const [activeTitle, setActiveJobTitle] = useState(null);
+  const [activeTitle, setActiveTitle] = useState(null);
   const [activeSkill, setActiveSkill] = useState(null);
 
   return (
@@ -13,7 +13,7 @@ const App = () => {
       <JobTitlesRow
         titles={jobTitles}
         activeTitle={activeTitle}
-        onClick={setActiveJobTitle}
+        onTitleChange={setActiveTitle}
       />
 
       {jobSkills.map((skill) => (
@@ -21,7 +21,7 @@ const App = () => {
           skill={skill}
           activeTitle={activeTitle}
           activeSkill={activeSkill}
-          onTitleChange={setActiveJobTitle}
+          onTitleChange={setActiveTitle}
           onSkillChange={setActiveSkill}
           key={skill}
         />
