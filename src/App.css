@@ -8,6 +8,8 @@
 }
 
 .job-title {
+  cursor: pointer;
+  border: none;
   border-radius: 2px;
   padding: 0.25rem;
   background-color: #f8c355;
@@ -17,6 +19,16 @@
   justify-content: center;
   font-weight: bold;
   font-size: 0.9rem;
+  color: #000000;
+}
+
+.job-title:hover {
+  text-decoration: underline;
+}
+
+.job-title.inactive {
+  background-color: #f8c35510;
+  color: #00000060;
 }
 
 .skill {
