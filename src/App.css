@@ -54,21 +54,41 @@
 .developing {
   background-color: #d8e8f6;
 }
+.developing.inactive {
+  background-color: #d8e8f610;
+  color: #00000060;
+}
 
 .supporting {
   background-color: #b5d1ec;
 }
+.supporting.inactive {
+  background-color: #b5d1ec10;
+  color: #00000060;
+}
 
 .applying {
   background-color: #90bae2;
+}
+.applying.inactive {
+  background-color: #90bae210;
+  color: #00000060;
 }
 
 .leading {
   background-color: #2a6aac;
   color: white;
 }
+.leading.inactive {
+  background-color: #2a6aac10;
+  color: #00000060;
+}
 
 .shaping {
   background-color: #1d466d;
   color: white;
+}
+.shaping.inactive {
+  background-color: #1d466d10;
+  color: #00000060;
 }

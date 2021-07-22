@@ -16,7 +16,7 @@ const App = () => {
       />
 
       {jobSkills.map((skill) => (
-        <SkillRow skill={skill} key={skill} />
+        <SkillRow skill={skill} activeJobTitle={activeJobTitle} key={skill} />
       ))}
     </div>
   );
