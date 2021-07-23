@@ -379,4 +379,14 @@ export const skillDescriptions = {
   },
 };
 
+export const proficiencyDescriptions = {
+  [DEVELOPING]: 'fundamental awareness – focus on learning',
+  [SUPPORTING]:
+    'limited experience and can perform task mostly with assistance',
+  [APPLYING]: 'practical application mostly without assistance',
+  [LEADING]: 'capable of coaching others on this skill',
+  [SHAPING]:
+    'recognized authority with a strategic focus across the organization',
+};
+
 export const jobSkills = Object.keys(skillProficencies);
