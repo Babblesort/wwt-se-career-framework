@@ -65,6 +65,14 @@
   justify-content: center;
   font-size: 0.9rem;
 
+  &.readonly {
+    cursor: default;
+    margin-top: 3rem;
+    width: 8rem;
+    height: 3rem;
+    color: black;
+  }
+
   &:hover {
     text-decoration: underline;
   }
@@ -112,7 +120,30 @@
   }
 }
 
+.skill-label {
+  color: #f8c355;
+  font-weight: bold;
+  font-size: 2.8rem;
+}
+
+.section-label {
+  margin-top: 3rem;
+  color: #f8c355;
+}
+
 .skill-description {
   padding: 1rem;
   color: #eeeeee;
+  max-width: 55rem;
+}
+
+.skill-definition,
+.skill-behavior,
+.proficiency-item {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.skill-definition {
+  margin-left: 1.5rem;
 }

@@ -17,14 +17,17 @@ const SkillLeveling = ({ activeTitle, activeSkill }) => {
 
   return (
     <>
-      <h2>Leveling</h2>
       {levels.map((level) => {
         return (
           <div key={level}>
-            <h3>{level}</h3>
+            <h3 className={`proficiency readonly ${level.toLowerCase()}`}>
+              {level}
+            </h3>
             <ul>
               {skillLevels[level].map((levelBehavior, i) => (
-                <li key={i}>{levelBehavior}</li>
+                <li className="proficiency-item" key={i}>
+                  {levelBehavior}
+                </li>
               ))}
             </ul>
           </div>

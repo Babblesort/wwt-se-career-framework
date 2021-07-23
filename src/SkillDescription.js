@@ -12,16 +12,18 @@ const SkillDescription = ({ activeTitle, activeSkill }) => {
 
   return (
     <div className="skill-description">
-      <h1>{activeSkill}</h1>
+      <h1 className="skill-label">{activeSkill}</h1>
       <section>
-        <h2>Definition</h2>
-        <p className="definition">{skillDefinition}</p>
+        <h2 className="section-label">Definition</h2>
+        <p className="skill-definition">{skillDefinition}</p>
       </section>
       <section>
-        <h2>Behaviors</h2>
+        <h2 className="section-label">Behaviors</h2>
         <ul>
           {skillBehaviors.map((behavior, i) => (
-            <li key={i}>{behavior}</li>
+            <li className="skill-behavior" key={i}>
+              {behavior}
+            </li>
           ))}
         </ul>
       </section>
