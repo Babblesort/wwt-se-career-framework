@@ -47,7 +47,7 @@ const SkillRow = ({
         });
 
         if (proficiency === NONE) {
-          return <div />;
+          return <div key={proficiencyKey} />;
         }
 
         return (
