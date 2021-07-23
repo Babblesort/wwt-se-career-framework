@@ -3,8 +3,8 @@ const PROGRAMMING = 'Application Development & Programming';
 const ARCHITECTURE = 'Architecture Design';
 const COMMUNICATION = 'Technical Communication & Presentation';
 const LEADERSHIP = 'Technical Leadership';
-const CONSULTING = 'Technology Advising & Consulting';
-const REQUIREMENTS = 'Technical Requirements Analysis';
+const CONSULTING = 'Technical Advising & Consulting';
+const REQUIREMENTS = 'Technology Requirements Analysis';
 
 export const NONE = '';
 const DEVELOPING = 'Developing';
