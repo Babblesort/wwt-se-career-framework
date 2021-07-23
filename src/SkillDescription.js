@@ -1,5 +1,6 @@
 import React from 'react';
 import { skillDescriptions } from './job-data';
+import SkillLeveling from './SkillLeveling';
 
 const SkillDescription = ({ activeTitle, activeSkill }) => {
   if (activeSkill === null) {
@@ -23,6 +24,9 @@ const SkillDescription = ({ activeTitle, activeSkill }) => {
             <li key={i}>{behavior}</li>
           ))}
         </ul>
+      </section>
+      <section>
+        <SkillLeveling activeTitle={activeTitle} activeSkill={activeSkill} />
       </section>
     </div>
   );
