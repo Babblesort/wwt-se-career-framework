@@ -1,6 +1,6 @@
 import classNames from 'classnames';
 import React from 'react';
-import { jobTitles, skillProficencies } from './job-data';
+import { jobTitles, skillProficencies, NONE } from './job-data';
 
 const SkillRow = ({
   skill,
@@ -45,6 +45,11 @@ const SkillRow = ({
         const classes = classNames(proficiencyClass, {
           inactive: isInactiveProficiency,
         });
+
+        if (proficiency === NONE) {
+          return <div />;
+        }
+
         return (
           <button
             type="button"

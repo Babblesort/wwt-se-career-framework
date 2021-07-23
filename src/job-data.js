@@ -6,7 +6,7 @@ const LEADERSHIP = 'Technical Leadership';
 const CONSULTING = 'Technology Advising & Consulting';
 const REQUIREMENTS = 'Technical Requirements Analysis';
 
-const NONE = '';
+export const NONE = '';
 const DEVELOPING = 'Developing';
 const SUPPORTING = 'Supporting';
 const APPLYING = 'Applying';
