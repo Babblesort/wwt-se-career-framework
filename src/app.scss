@@ -79,6 +79,10 @@
     width: 8rem;
     height: 3rem;
     color: black;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   &:hover {
