@@ -1,6 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
-const JobTitlesRow = ({ titles, activeTitle, onTitleChange }) => {
+const JobTitlesRow = ({
+  titles,
+  activeTitle,
+  activeSkill,
+  onTitleChange,
+  onReset,
+}) => {
   const handleClick = (title) => {
     const nextActiveTitle = title === activeTitle ? null : title;
     onTitleChange(nextActiveTitle);
@@ -8,7 +14,13 @@ const JobTitlesRow = ({ titles, activeTitle, onTitleChange }) => {
 
   return (
     <>
-      <div />
+      {activeTitle !== null || activeSkill !== null ? (
+        <button className="reset-button" type="button" onClick={onReset}>
+          Reset Selections
+        </button>
+      ) : (
+        <div />
+      )}
       {titles.map((title) => {
         const titleClass = classNames('job-title', {
           inactive: activeTitle != null && title !== activeTitle,

@@ -7,6 +7,19 @@
   row-gap: 0.5rem;
 }
 
+.reset-button {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1.1rem;
+  color: #cccccc;
+
+  &:hover {
+    text-decoration: underline;
+    color: #ffffff;
+  }
+}
+
 .job-title {
   cursor: pointer;
   border: none;

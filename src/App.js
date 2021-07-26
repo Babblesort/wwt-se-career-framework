@@ -9,13 +9,20 @@ const App = () => {
   const [activeTitle, setActiveTitle] = useState(null);
   const [activeSkill, setActiveSkill] = useState(null);
 
+  const handleReset = () => {
+    setActiveTitle(null);
+    setActiveSkill(null);
+  };
+
   return (
     <>
       <div className="se-grid">
         <JobTitlesRow
           titles={jobTitles}
           activeTitle={activeTitle}
+          activeSkill={activeSkill}
           onTitleChange={setActiveTitle}
+          onReset={handleReset}
         />
 
         {jobSkills.map((skill) => (
