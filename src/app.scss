@@ -22,11 +22,11 @@
   color: #000000;
 
   &.inactive {
-    background-color: #f8c35510;
+    background-color: #f8c35530;
     color: #00000060;
 
     &:hover {
-      background-color: #f8c35540;
+      background-color: #f8c35560;
     }
   }
 
@@ -49,11 +49,11 @@
   font-size: 0.9rem;
 
   &.inactive {
-    background-color: #83878710;
-    color: #ffffff10;
+    background-color: #83878730;
+    color: #ffffff20;
 
     &:hover {
-      background-color: #83878740;
+      background-color: #83878760;
     }
   }
 
@@ -92,11 +92,11 @@
   &.developing {
     background-color: #d8e8f6;
     &.inactive {
-      background-color: #d8e8f610;
+      background-color: #d8e8f620;
       color: #00000060;
 
       &:hover {
-        background-color: #d8e8f640;
+        background-color: #d8e8f680;
       }
     }
   }
@@ -104,11 +104,11 @@
   &.supporting {
     background-color: #b5d1ec;
     &.inactive {
-      background-color: #b5d1ec10;
+      background-color: #b5d1ec20;
       color: #00000060;
 
       &:hover {
-        background-color: #b5d1ec40;
+        background-color: #b5d1ec80;
       }
     }
   }
@@ -116,11 +116,11 @@
   &.applying {
     background-color: #90bae2;
     &.inactive {
-      background-color: #90bae210;
+      background-color: #90bae220;
       color: #00000060;
 
       &:hover {
-        background-color: #90bae240;
+        background-color: #90bae280;
       }
     }
   }
@@ -129,11 +129,11 @@
     background-color: #2a6aac;
     color: white;
     &.inactive {
-      background-color: #2a6aac10;
+      background-color: #2a6aac20;
       color: #00000060;
 
       &:hover {
-        background-color: #2a6aac40;
+        background-color: #2a6aac80;
       }
     }
   }
@@ -142,11 +142,11 @@
     background-color: #1d466d;
     color: white;
     &.inactive {
-      background-color: #1d466d10;
+      background-color: #1d466d20;
       color: #00000060;
 
       &:hover {
-        background-color: #1d466d40;
+        background-color: #1d466d80;
       }
     }
   }
