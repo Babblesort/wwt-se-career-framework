@@ -23,8 +23,12 @@ const SkillLeveling = ({ activeTitle, activeSkill }) => {
             <h3 className={`proficiency readonly ${level.toLowerCase()}`}>
               {level}
             </h3>
+            {skillLevels[level].summary !== null ? (
+              <h3 className="summary">{skillLevels[level].summary}</h3>
+            ) : null}
+
             <ul>
-              {skillLevels[level].map((levelBehavior, i) => (
+              {skillLevels[level].behaviors.map((levelBehavior, i) => (
                 <li className="proficiency-item" key={i}>
                   {levelBehavior}
                 </li>
